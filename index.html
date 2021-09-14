@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de media</title>
+</head>
+<body>
+    <div class="container">
+      <h1 class="page-title">
+      Calculadora de média</h1>
+      <p class="page-subtitle">
+      Descubra qual a média de um número variável de notas!
+      </p>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+      <label for ="numero_notas" class = "label">Selecione a quantidade de notas:</label>
+      <select name ="numero_notas" class="numero_de_notas" onchange="numero=change(this)">
+        <option value = "">Selecione</option>
+        <option value = "2">2 Notas</option>
+        <option value = "3">3 Notas</option>
+        <option value = "4">4 Notas</option>
+      </select>
+    </div>
+      <div id="caixaDeNotas" class="box--field invisible">
+        <fieldset class="notas">
+          <div id="nota-1" class="in-notas">
+            <label for="primeiraNota" class="label intern">Digite a primeira nota:</label>
+          <input type="number" 
+                 max="10" 
+                 min="0" 
+                 step="0.05"
+                 id = "not_1"
+                 name = "primeiraNota"
+                 onchange="changenot(this)"
+                 >
+          </div>
+          <div id="nota-2" class="in-notas">
+            <label for="segundaNota" class="label">Digite a segunda nota:</label>
+          <input type="number" 
+                 max="10" 
+                 min="0" 
+                 step="0.05"
+                 id = "not_2"
+                 name = "segundaNota"
+                 onchange="changenot(this)"
+                 >
+          </div>
+          <div id="nota-3" class="in-notas">
+            <label for="terceiraNota" class="label">Digite a terceira nota:</label>
+          <input type="number" 
+                 max="10" 
+                 min="0" 
+                 step="0.05"
+                 id = "not_3"
+                 name = "terceiraNota"
+                 onchange="changenot(this)"
+                 >
+          </div>
+          <div id="nota-4" class="in-notas">
+            <label for="quartaNota" class="label">Digite a terceira nota:</label>
+          <input type="number" 
+                 max="10" 
+                 min="0" 
+                 step="0.05"
+                 id = "not_4"
+                 name = "quartaNota"
+                 onchange="changenot(this)"
+                 >
+          </div>
+        </fieldset>
+      </div>
+    <button id="calcular" class="botao invisible" onclick = "calcMedia()">Calcular</button>
+    <div id="aprovado" class="resultado invisible"></div>
+    <div id="reprovado" class="resultado invisible"></div>
+    <div id="aprovado-gif" class="invisible container">
+      <iframe src="https://giphy.com/embed/g9582DNuQppxC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hero0fwar-karmawhore-rhyming-g9582DNuQppxC">via GIPHY</a></p>
+    </div>
+    <div id="reprovado-gif" class="invisible container">
+      <iframe src="https://giphy.com/embed/xT0BKFyZt9MMx9xkpW" width="480" height="327" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/chuber-my-bad-xT0BKFyZt9MMx9xkpW">via GIPHY</a></p>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+  </body>
+</html>
