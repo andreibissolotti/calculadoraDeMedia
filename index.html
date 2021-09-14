@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="/script.js"></script>
     <div class="container">
       <h1 class="page-title">
       Calculadora de média</h1>
@@ -17,7 +16,7 @@
       </p>
       <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
       <label for ="numero_notas" class = "label">Selecione a quantidade de notas:</label>
-      <select name ="numero_notas" class="numero_de_notas" onchange="numero=change(this)">
+      <select name ="numero_notas" class="numero_de_notas" onchange="change(this)">
         <option value = "">Selecione</option>
         <option value = "2">2 Notas</option>
         <option value = "3">3 Notas</option>
@@ -27,7 +26,7 @@
       <div id="caixaDeNotas" class="box--field invisible">
         <fieldset class="notas">
           <div id="nota-1" class="in-notas">
-            <label for="primeiraNota" class="label intern">Digite a primeira nota:</label>
+            <label for="primeiraNota" class="label">Digite a primeira nota:</label>
           <input type="number" 
                  max="10" 
                  min="0" 
@@ -83,6 +82,11 @@
     </div>
     <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    </a>
+    </a>    
+    
+    
+    <script src="script.js"></script>
+
+
   </body>
 </html>

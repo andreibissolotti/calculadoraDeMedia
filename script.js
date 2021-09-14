@@ -1,11 +1,5 @@
-function visible(element){
-    element.classList.remove('invisible')
-  }
-  function invisible(element){
-    element.classList.add('invisible')
-  }
-  
-  const caixaDeNotas = document.querySelector('#caixaDeNotas')
+
+ const caixaDeNotas = document.querySelector('#caixaDeNotas')
   var not_1 = document.querySelector('#nota-1')
   var not_2 = document.querySelector('#nota-2')
   var not_3 = document.querySelector('#nota-3')
@@ -18,8 +12,8 @@ function visible(element){
   
   var numero = 0
   function change(numSelect){
-    var numero = numSelect.value
-    switch (numero){
+    var num = numSelect.value
+    switch (num){
       case "2":
         visible(caixaDeNotas)
         visible(button)
@@ -52,7 +46,7 @@ function visible(element){
         invisible(not_3)
         invisible(not_4)
     }
-    return numero
+    numero = num
   }
   
   function changenot(not){
@@ -97,3 +91,9 @@ function visible(element){
     }
   }
   
+  function visible(element){
+    element.classList.remove('invisible')
+  }
+  function invisible(element){
+    element.classList.add('invisible')
+  }
